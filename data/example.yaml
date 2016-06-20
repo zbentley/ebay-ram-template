@@ -1,0 +1,17 @@
+---
+manufacturer: Sample Manufacturer
+serial_number: foo
+size_bytes: 16GB
+size_per_stick: 8GB
+speed_code: PC2-2100
+speed_hz: 800mhz
+cas_latency: 2.5
+timings: 2.5-2.5-2.5-5
+ddr_rev: 4
+pin_count: 184
+stick_count: 2
+laptop: true
+desktop: false
+# specifications_link:
+
+# other_number:

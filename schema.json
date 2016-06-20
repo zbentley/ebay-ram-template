@@ -1,0 +1,67 @@
+{
+    "title": "RAM listing schema",
+    "type": "object",
+    "properties": {
+        "manufacturer": {
+            "type": "string",
+            "required": true
+        },
+        "size_bytes": {
+            "type": "string",
+            "required": true
+        },
+        "size_per_stick": {
+            "type": "string",
+            "required": true
+        },
+        "stick_count": {
+            "description": "Number of sticks",
+            "type": "integer",
+            "minimum": 1
+        },
+        "speed_code": {
+            "type": "string",
+            "required": true
+        },
+        "speed_hz": {
+            "type": "string",
+            "required": true
+        },
+        "ddr_rev": {
+            "description": "Kind of DDR, e.g. DDR3",
+            "type": "integer",
+            "minimum": 1
+        },
+        "pin_count": {
+            "description": "Number of pins",
+            "type": "integer",
+            "minimum": 184
+        },
+        "is_laptop": {
+            "type": "boolean"
+        },
+        "is_desktop": {
+            "type": "boolean"
+        },
+        "cas_latency": {
+            "type": "number",
+            "required": true,
+            "minimum": 1
+        },
+        "timings": {
+            "type": "string",
+            "required": true
+        },
+        "serial_number": {
+            "type": "string",
+            "required": true
+        },
+        "serial_number": {
+            "type": "string",
+            "required": true
+        },
+        "specifications_link": {
+            "default": false
+        }
+    }
+}
