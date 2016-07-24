@@ -41,3 +41,6 @@ doc/generated/
 
 # Data files (should be supplied by user, should not be committed)
 data/*.yaml
+
+# Temp directory
+tmp/

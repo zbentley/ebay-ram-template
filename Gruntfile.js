@@ -93,6 +93,6 @@ module.exports = (grunt) => {
         'json_schema:validate',
         'mustache_render:render',
         'markdown:all',
-        'clean:tmp',
+        // 'clean:tmp',
     ]);
 };
