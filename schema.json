@@ -49,8 +49,7 @@
             "minimum": 1
         },
         "timings": {
-            "type": "string",
-            "required": true
+            "type": "string"
         },
         "serial_number": {
             "type": "string",

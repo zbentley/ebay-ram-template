@@ -12,15 +12,15 @@ Happy bidding!
 
 # Specifications
 
-{{#specifications_link}}Additional specifications for this RAM can be found at [this link]({{specifications_link}})
-
-{{/specifications_link}}- Serial number: {{serial_number}}
-{{#other_number}}- Other identifying number: {{other_number}}{{/other_number}}
+{{#specifications_link}}Additional specifications for this RAM can be found at [this link]({{specifications_link}}){{/specifications_link}}
+- Serial number: {{serial_number}}
+{{#other_number}}
+- Other identifying number: {{other_number}}{{/other_number}}
 - Manufacturer: {{manufacturer}}
 - Type: DDR{{ddr_rev}}
 - Size: {{size}} ({{stick_count}} X {{size_per_stick}})
 - Speed: {{speed_hz}} ({{speed_code}})
-- Timings {{timings}}
+{{#timings}}- Timings {{timings}}{{/timings}}
 - Form Factor: {{pin_count}}-pin {{#laptop}}SO-{{/laptop}}DIMM
 
 # Returns, Shipping and Payment
