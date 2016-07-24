@@ -1,8 +1,10 @@
-# {{manufacturer}} {{size_bytes}} {{stick_count}}x{{size_per_stick}} {{speed_code}} {{speed_hz}} DDR{{#ddr_rev}}{{ddr_rev}}{{/ddr_rev}} {{pin_count}}-pin {{#laptop}}laptop{{/laptop}}{{#desktop}}desktop{{/desktop}} RAM
+# {{manufacturer}} {{size_bytes}} {{stick_count}}x{{size_per_stick}} {{speed_code}} {{speed_hz}} DDR{{#ddr_rev}}{{ddr_rev}}{{/ddr_rev}} PC{{#apple_compatible}}/Macbook{{/apple_compatible}} {{#laptop}}Laptop{{/laptop}}{{#desktop}}Desktop{{/desktop}} {{#ecc}}Server ECC{{/ecc}} RAM
 
 Up for auction is {{size_bytes}} ({{stick_count}} x {{size_per_stick}} per stick) of {{#laptop}}laptop{{/laptop}}{{#desktop}}desktop{{/desktop}} RAM, made by {{manufacturer}}, in perfect working condition.
 
 This RAM has been tested with memtest86+ and is error-free. It is in pristine cosmetic condition, witih no corrosion or abrasion on the pins. Additional specifications are below.
+{{#apple_compatible}}
+This RAM was pulled from an Apple MacBook, and is fully compatible with Apple hardware. Please verify compatibility with your Apple product before bidding--not all RAM works in all MacBooks.{{/apple_compatible}}
 
 I guarantee this item to be fully functional and as described. It will be packed and shipped by a computer hardware support professional, so bid with confidence.
  
@@ -12,11 +14,13 @@ Happy bidding!
 
 # Specifications
 
-{{#specifications_link}}Additional specifications for this RAM can be found at [this link]({{specifications_link}})
-{{/specifications_link}}- Serial number: {{serial_number}}
+{{#specifications_link}}Additional specifications for this RAM can be found at [this link]({{specifications_link}}).
+{{/specifications_link}}
+
+- Serial number: {{serial_number}}
 {{#other_number}}- Other identifying number: {{other_number}}
 {{/other_number}}- Manufacturer: {{manufacturer}}
-- Type: DDR{{ddr_rev}}
+- Type: {{#ecc}}ECC Registered {{/ecc}}DDR{{ddr_rev}} 
 - Size: {{size}} ({{stick_count}} X {{size_per_stick}})
 - Speed: {{speed_hz}} ({{speed_code}})
 {{#timings}}- Timings: {{timings}}

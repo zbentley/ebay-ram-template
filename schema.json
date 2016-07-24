@@ -37,16 +37,21 @@
             "type": "integer",
             "minimum": 184
         },
-        "is_laptop": {
+        "laptop": {
             "type": "boolean"
         },
-        "is_desktop": {
+        "desktop": {
+            "type": "boolean"
+        },
+        "apple_compatible": {
+            "type": "boolean"
+        },
+        "ecc": {
             "type": "boolean"
         },
         "cas_latency": {
             "type": "number",
-            "required": true,
-            "minimum": 1
+            "minimum": 2
         },
         "timings": {
             "type": "string",
@@ -62,6 +67,9 @@
         },
         "specifications_link": {
             "default": false
+        },
+        "other_number": {
+            "type": "string"
         }
     }
 }
