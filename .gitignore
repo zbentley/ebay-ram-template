@@ -1,7 +1,6 @@
 # Logs
 logs
 *.log
-npm-debug.log*
 
 # Runtime data
 pids
@@ -14,9 +13,6 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc test coverage
-.nyc_output
-
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
@@ -26,12 +22,22 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-jspm_packages
 
-# Optional npm cache directory
-.npm
+# Tests
+*.bash
 
-# Optional REPL history
-.node_repl_history
+# Test folder output
+out/
+
+# Generated documentation for the gh-pages branch
+doc/generated/
+
+# OSX garbage
+.DS_Store
+**/.DS_Store
+
+# Data files (should be supplied by user, should not be committed)
+data/*.yaml
