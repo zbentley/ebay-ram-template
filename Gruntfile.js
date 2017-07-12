@@ -66,7 +66,7 @@ module.exports = (grunt) => {
                 template: 'tmp/template.html',
                 markdownOptions: {
                     // Don't add the stylesheet for code highlighting.
-                    highlight: () => {},
+                    highlight: false,
                 }
             },
             all: {
